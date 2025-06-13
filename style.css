@@ -11,44 +11,48 @@ body {
     background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
-    padding: 0;  /* Remover o padding do body */
-    min-height: 100vh; /* Garantir que a página ocupe toda a altura da tela */
     display: flex;
-    flex-direction: column; /* Permite que o cabeçalho e o rodapé fiquem fixos no topo e fundo */
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
 }
 
 /* Estilo do cabeçalho */
 header {
     background-color: #24292f;
     color: white;
-    padding: 20px 0;  /* Ajuste no padding para mais espaçamento */
+    padding: 20px 0;
     text-align: center;
+    position: relative; /* Para que possamos ajustar o comportamento */
+    z-index: 10; /* Fica acima de outros elementos */
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin: 0;  /* Remover margem do título */
 }
 
-/* Estilo do main */
+/* Estilo do conteúdo principal */
 main {
-    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante da tela */
-    margin: 20px 0;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
-/* Estilo das seções */
+/* Estilo das seções dentro do conteúdo */
 section {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo do rodapé */
 footer {
-    background-color: #24292f;  /* Fundo igual ao cabeçalho */
+    background-color: #24292f;
     color: white;
     text-align: center;
-    padding: 10px 0;  /* Adicionado espaçamento */
-    margin-t
-
