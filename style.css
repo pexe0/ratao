@@ -1,11 +1,11 @@
-
+/* Reset de margens e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
+/* Estilo do body */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
@@ -14,21 +14,25 @@ body {
     padding: 20px;
 }
 
+/* Estilo do cabeçalho */
 header {
     background-color: #24292f;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 0;  /* Ajuste no padding para espaçamento */
     text-align: center;
 }
 
 header h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;  /* Espaçamento abaixo do título */
 }
 
+/* Estilo do main */
 main {
     margin: 20px 0;
 }
 
+/* Estilo das seções */
 section {
     background-color: white;
     padding: 20px;
@@ -36,13 +40,20 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo do rodapé */
 footer {
+    background-color: #24292f;  /* Fundo igual ao cabeçalho */
+    color: white;
     text-align: center;
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #777;
+    padding: 10px 0;  /* Adicionado espaçamento */
+    margin-top: 30px;  /* Espaçamento acima do rodapé */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-    margin: 10px;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
 }
